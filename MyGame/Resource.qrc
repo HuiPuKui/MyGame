@@ -1,8 +1,19 @@
 <RCC>
     <qresource prefix="/new/Picture">
         <file>BackGround.png</file>
+        <file>GameBackGround.jpg</file>
+        <file>Ship.png</file>
+        <file>BigFish.png</file>
+        <file>FastFish.png</file>
+        <file>MiddleFish.png</file>
+        <file>Shark.png</file>
+        <file>SmallFish.png</file>
+        <file>TimeFish.png</file>
+        <file>Gouzi.png</file>
     </qresource>
     <qresource prefix="/new/Music">
         <file>BackGround.wav</file>
+        <file>Shoot.wav</file>
+        <file>GetFish.wav</file>
     </qresource>
 </RCC>

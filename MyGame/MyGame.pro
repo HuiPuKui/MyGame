@@ -29,15 +29,20 @@ CONFIG += resources_big
 SOURCES += \
         main.cpp \
         MainWindow.cpp \
-    GameWidget.cpp
+    GameWidget.cpp \
+    Item.cpp \
+    EndPage.cpp
 
 HEADERS += \
         MainWindow.h \
-    GameWidget.h
+    GameWidget.h \
+    Item.h \
+    EndPage.h
 
 FORMS += \
         MainWindow.ui \
-    GameWidget.ui
+    GameWidget.ui \
+    EndPage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -36,27 +36,6 @@
      <string>海底捕鱼小游戏</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="PBStartGame">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>400</y>
-      <width>341</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>幼圆</family>
-      <pointsize>22</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>开始游戏</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="PBExitGame">
     <property name="geometry">
      <rect>
@@ -76,6 +55,30 @@
     </property>
     <property name="text">
      <string>退出游戏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PBStartGame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>380</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>开始游戏</string>
     </property>
    </widget>
   </widget>

@@ -3,7 +3,13 @@
 #include "GameWidget.h"
 
 #include <QSound>
-#include <QMovie>
+
+/**
+ * @brief CMainWindow::CMainWindow
+ * @param parent
+ *
+ * 页面初始化
+ */
 
 CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::CMainWindow)
 {
@@ -27,10 +33,20 @@ CMainWindow::CMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::CMai
     connect(ui->PBExitGame, &QPushButton::clicked, this, &CMainWindow::close);
 }
 
+/**
+ * @brief CMainWindow::~CMainWindow
+ * 析构
+ */
+
 CMainWindow::~CMainWindow()
 {
     delete ui;
 }
+
+/**
+ * @brief CMainWindow::StartGame
+ * 点击开始游戏
+ */
 
 void CMainWindow::StartGame()
 {

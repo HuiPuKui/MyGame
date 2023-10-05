@@ -23,11 +23,13 @@ public:
     explicit CMainWindow(QWidget *parent = nullptr);
     ~CMainWindow();
 
+private:
     void StartGame();
+
 private:
     Ui::CMainWindow *ui;
-    CGameWidget *m_cGameWidget;
-    QSound *m_qBackGround;
+    CGameWidget *m_cGameWidget;     // 游戏界面
+    QSound *m_qBackGround;          // 背景音乐
 };
 
 #endif // _MAINWINDOW_H__

@@ -26,8 +26,8 @@ class Ui_CMainWindow
 public:
     QWidget *centralWidget;
     QLabel *label;
-    QPushButton *PBStartGame;
     QPushButton *PBExitGame;
+    QPushButton *PBStartGame;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -49,19 +49,20 @@ public:
         font.setItalic(false);
         font.setWeight(75);
         label->setFont(font);
-        PBStartGame = new QPushButton(centralWidget);
-        PBStartGame->setObjectName(QString::fromUtf8("PBStartGame"));
-        PBStartGame->setGeometry(QRect(450, 400, 341, 51));
+        PBExitGame = new QPushButton(centralWidget);
+        PBExitGame->setObjectName(QString::fromUtf8("PBExitGame"));
+        PBExitGame->setGeometry(QRect(450, 480, 341, 51));
         QFont font1;
         font1.setFamily(QString::fromUtf8("\345\271\274\345\234\206"));
         font1.setPointSize(22);
         font1.setBold(true);
         font1.setWeight(75);
-        PBStartGame->setFont(font1);
-        PBExitGame = new QPushButton(centralWidget);
-        PBExitGame->setObjectName(QString::fromUtf8("PBExitGame"));
-        PBExitGame->setGeometry(QRect(450, 480, 341, 51));
         PBExitGame->setFont(font1);
+        PBStartGame = new QPushButton(centralWidget);
+        PBStartGame->setObjectName(QString::fromUtf8("PBStartGame"));
+        PBStartGame->setEnabled(true);
+        PBStartGame->setGeometry(QRect(450, 380, 341, 51));
+        PBStartGame->setFont(font1);
         CMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(CMainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -83,8 +84,8 @@ public:
     {
         CMainWindow->setWindowTitle(QApplication::translate("CMainWindow", "CMainWindow", nullptr));
         label->setText(QApplication::translate("CMainWindow", "\346\265\267\345\272\225\346\215\225\351\261\274\345\260\217\346\270\270\346\210\217", nullptr));
-        PBStartGame->setText(QApplication::translate("CMainWindow", "\345\274\200\345\247\213\346\270\270\346\210\217", nullptr));
         PBExitGame->setText(QApplication::translate("CMainWindow", "\351\200\200\345\207\272\346\270\270\346\210\217", nullptr));
+        PBStartGame->setText(QApplication::translate("CMainWindow", "\345\274\200\345\247\213\346\270\270\346\210\217", nullptr));
     } // retranslateUi
 
 };
